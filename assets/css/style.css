@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.first-page {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #d9d9d9;
+}
+
+.top {
+    display: flex;
+    gap: 5rem;
+    align-items: start;
+}
+
+.top img {
+    width: 13rem;
+}
+
+.top h1 {
+    color: rgb(190 28 72);
+    font-size: 4.3rem;
+    line-height: 1;
+}
+
+@media (max-width: 585px) {
+    .top {
+        gap: 3rem;
+    }
+    .top h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 452px) {
+    .top h1 {
+        font-size: 1.9rem;
+    }
+}
+
+
+/* chart */
+
+.main-chart {
+    display: flex;
+    padding-left: 14.8rem;
+    gap: 5rem;
+}
+
+.chart p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 300px !important;
+    max-width: 400px;
+}
+
+
+/* circle */
+
+.bubble-chart {
+    display: flex;
+    text-align: center;
+}
+
+.bubble-chart .awardd-icon {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+}
+
+.bubble-chart div.one {
+    margin-right: -1rem;
+}
+
+.bubble-chart div.one>div:nth-child(1) {
+    margin-right: -5rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -4rem;
+}
+
+.bubble-chart>div>div+div {
+    margin-top: 5rem;
+}
+
+.bubble-chart h5 {
+    font-size: 1.125rem;
+    color: #334149;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
+}
+
+.bubble-chart h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #334149;
+    margin-bottom: -0.5rem;
+}
+
+.bubble-chart h6 {
+    color: #334149;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
+}
+
+.bubble-box {
+    width: 120px;
+    background: red;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 1rem auto 0;
+}
+
+.bubble-box.highest {
+    background-color: #cad400;
+}
+
+.bubble-box.medium {
+    background-color: #ffd300;
+}
+
+.bubble-box.lowest {
+    background-color: #dc1f20;
+}
+
+.bubble-box span {
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+.bubble-box p {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.main-bubble .bubble-box {
+    width: 240px;
+}
+
+.main-bubble .bubble-box span {
+    font-size: 5rem;
+}
+
+.main-bubble .bubble-box p {
+    font-size: 2.5rem;
+}
+
+
+/* card */
+
+.card {
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+.card .inner-card {
+    background-color: rgb(164, 163, 163);
+    color: #4e4d4d;
+    padding: 10px 20px;
+    width: 49.5%;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card .right-card.inner-card {
+    font-weight: 500;
+}
+
+.card .left-card span {
+    text-align: end;
+    color: rgb(186, 21, 21);
+}
+
+.card .right-card ol {
+    list-style-position: inside;
+}
+
+.card .right-card h1 {
+    font-size: 30px;
+}
+
+
+/* table */
+
+.table {
+    background: #a6a6a6;
+    width: 90%;
+    margin: auto;
+    max-width: 1440px;
+    margin-top: 0.875rem;
+}
+
+.table tr th {
+    font-size: 1.4rem;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.table thead tr th {
+    background-color: #595959;
+    color: white;
+}
+
+table.table #t-body tr td {
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.375rem;
+    font-weight: 500;
+    border: 2px solid #d9d9d9;
+}
+
+table.table #t-body tr>td.highest {
+    background-color: #cad400;
+}
+
+table.table #t-body tr>td.medium {
+    background-color: #ffd300;
+}
+
+table.table #t-body tr>td.lowest {
+    background-color: #dc1f20;
+}
+
+table.table #t-body tr>td.scoreValue {
+    width: 150px;
+}
+
+table.table #t-body tr>td:nth-last-child(-n+2) {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+
+/* end */
+
+.end-text {
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    padding-top: 12rem;
+    font-size: 1.3rem;
+    padding-bottom: 8rem;
+}
+
+.end-text h1 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #595959;
+}
+
+
+/* second-page */
+
+.second-page {
+    width: 100%;
+    height: auto;
+    /* padding: 1.2rem; */
+    margin: auto;
+}
+
+.end-page {
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.imageWrapper-end {
+    /* display: flex; */
+    flex-direction: row;
+    /* width: 40%; */
+    padding-left: 14rem;
+}
+
+.main-text-end {
+    left: 2rem;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.imageWrapper-end .side-image {
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid rgb(166 166 166);
+    border-right: 3px solid rgb(166 166 166);
+    padding: 2rem;
+}
+
+.brand {
+    padding-top: 5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.brand h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: skyblue;
+    color: white;
+}
+
+.main-sec {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* padding-top: 5rem; */
+}
+
+.main-text {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    display: flex;
+    text-align: start;
+    gap: 0.6rem;
+}
+
+.main-sec .main-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 4rem;
+}
+
+.main-sec img {
+    padding-top: 5rem;
+    width: 15rem;
+    height: 20rem;
+}
+
+.imageWrapper {
+    display: flex;
+    padding-top: 5rem;
+    /* align-items: start; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageWrapper img {
+    width: 20rem;
+}
+
+.imageWrapper .side-image {
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid rgb(166 166 166);
+    padding: 2rem;
+}
+
+.imageWrapper .side-image:nth-child(even) {
+    border-left: 3px solid rgb(166 166 166);
+}
+
+@media (max-width:1006px) {
+    .imageWrapper .main-text {
+        padding-left: 0rem;
+        /* width: 100%; */
+    }
+    .imageWrapper .main-text span {
+        font-size: 0.9rem;
+        text-align: start;
+    }
+}
+
+#MODULE_NAME {
+    display: inline;
+}
+
+
+/* media query */
+
+
+/* @media (max-width:559px) {
+    .imageWrapper {
+        flex-wrap: wrap;
+    }
+} */
+
+@media (max-width: 1199.98px) {
+    .main-chart {
+        justify-content: end;
+        gap: 3rem 2rem;
+        flex-wrap: wrap;
+    }
+    canvas {
+        width: 100%;
+        height: 250px !important;
+        max-width: 300px;
+    }
+    .chart p {
+        font-size: 1.375rem;
+    }
+    .main-bubble .bubble-box {
+        width: 185px;
+    }
+    .main-bubble .bubble-box span {
+        font-size: 3rem;
+    }
+    .main-bubble .bubble-box p {
+        font-size: 1.75rem;
+    }
+    .bubble-chart h4 {
+        font-size: 1.125rem;
+    }
+    .bubble-chart .awardd-icon {
+        width: 160px;
+        height: 110px;
+    }
+    .bubble-chart h5 {
+        font-size: 1rem;
+    }
+    .bubble-chart>div>div+div {
+        margin-top: 2rem;
+    }
+    .bubble-chart div.one>div:nth-child(1) {
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .table,
+    .card {
+        width: 100%;
+    }
+    .card .inner-card {
+        font-size: 1.125rem;
+    }
+    .card .right-card h1 {
+        font-size: 1.5rem;
+    }
+    .tableContainer {
+        overflow-x: scroll;
+    }
+    .table tr th {
+        font-size: 1.25rem;
+    }
+    table.table #t-body tr td {
+        font-size: 1.125rem;
+        padding: 0.25rem 0.5rem;
+    }
+    table.table #t-body tr>td:nth-last-child(-n+2) {
+        font-size: 1.5rem;
+    }
+    table.table #t-body tr>td.scoreValue {
+        width: 100px;
+    }
+}
+
+@media (max-width: 585px) {
+    .end-text h1 {
+        font-size: 1.8rem;
+    }
+    .end-text {
+        font-size: 0.9rem;
+        padding-top: 7rem;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card .inner-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="first-page">
+        <div class="top">
+            <img src="assets/img/logo.png" alt="">
+            <h1>BRAND STANDARDS</h1>
+        </div>
+        <div class="main-chart">
+            <div class="chart">
+                <p>PERFORMANCE HISTORY</p>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="bubble-chart">
+                <div class="one">
+                    <div>
+                        <h4>NETWORK RANK</h4>
+                        <h6>Unranked</h6>
+                        <figure class="img">
+                            <img src="assets/img/awards-icon.png" class="awardd-icon" alt="">
+                        </figure>
+                    </div>
+                    <div>
+                        <h5>CUSTOMER EXPERIENCE</h5>
+                        <div class="bubble-box">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-bubble">
+                        <h4>NEW SCORE</h4>
+                        <div class="bubble-box">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h4>NATIONAL AVERAGE</h4>
+                        <div class="bubble-box">
+                        </div>
+                    </div>
+                    <div>
+                        <h5>CLUSTER AVERAGE</h5>
+                        <div class="bubble-box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left-card inner-card">
+                <p>SERVICE STATION: <span id="SERVICE_STATION"></span></p>
+                <p>BUS ID: <span id="BUS_ID"></span></p>
+                <p>ATTENDEES:<span id="ADDENDESS"></span></p>
+                <p>RETAILER: <span id="RETAILER"></span></p>
+                <p>TIM: <span id="TIM"></span></p>
+                <p>DM: <span id="DM"></span></p>
+                <p>VISIT DATE: <span id="VISIT_DATE"></span></p>
+            </div>
+            <div class="right-card inner-card">
+                <h1><span id="COMMENT_NAME"></span> COMMENTS:</h1>
+                <p id="COMMENT_D"></p>
+                <!-- <ol id="COMMENT_LIST">
+                </ol> -->
+            </div>
+        </div>
+
+        <div class="tableContainer">
+            <table class="table" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>CATEGORY</th>
+                        <th>COMMENTS</th>
+                        <th>SCORE</th>
+                        <th>WEIGHTING</th>
+                    </tr>
+                </thead>
+                <tbody id="t-body">
+                </tbody>
+            </table>
+        </div>
+        <div class="end">
+            <div class="end-text">
+                <h1>Weighting Explanation</h1>
+                <p>The Weighting column demonstrates how much each category contributes to your overall Brand Standards score, so you are able to prioritise your actions accordingly. these have been set to maximise the impact on business performance. Please
+                    speak to your Brand Standards Consultant for further explanation and help in developing your action plan. the team are here to help and support you in whatever way is necessary</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="" class="second-page">
+
+        <div class="main-sec">
+            <!-- <div class="main-side">
+                 <div class="center">
+                     <h5>Occurrences on <br> last 4 visits</h5>
+                        <h4 class="red-circle">4</h4> -->
+            <!-- </div> -->
+            <div id="box" class="imageWrapper"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/main.js"></script>
